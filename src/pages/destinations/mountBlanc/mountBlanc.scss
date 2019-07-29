@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+
+#mount-blanc {
+        background: url('./m.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-repeat: none;
+        background-attachment: fixed;
+    .top {
+        position: relative;
+    }
+    .content {
+        position: absolute;
+        top: 100vh;
+        width: 100%;
+        background-color: $primary-color;
+    }
+}

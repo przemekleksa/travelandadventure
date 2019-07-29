@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+@mixin form {
+    border: 2px solid white;
+    background-color: $form-bg-color;
+    color: $primary-color;
+    padding: 15px 20px;
+    margin: 5px;
+    width: 20%;
+}
+
+@mixin scale-mobile-md {
+    @media screen and (max-width: $form-break-point) {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        input {
+            flex: 0 47%;
+            order: 2;
+        }
+        #when {
+            flex: 0 47%;
+            order: 1;
+        }
+        #travel-type {
+            flex: 0 47%;
+            order: 3;
+        }
+        button {
+            flex: 0 47%;
+            order: 4;
+        }
+    }
+}
+
+.search-destination {
+    background-color: $form-bg-color;
+    // background-color: red;
+    // width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    input {
+        @include form;
+      
+    }
+    select {
+        @include form;    
+        -webkit-appearance: none;
+    }
+    button {
+        background-color: $secondary-color;
+        border: 0px;
+        text-transform: uppercase;
+        padding: 17px 40px;
+        margin: 5px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        cursor: pointer;
+        &:hover {
+            background-color: $hover-button-color;
+            color: $primary-color;
+            padding: 15px 38px;
+            border: 2px solid $primary-color;
+        }
+    }
+    @include scale-mobile-md;
+}

@@ -1,0 +1,122 @@
+@import '../../styles/variables';
+
+@mixin h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+@mixin scale {
+    @media screen and (max-width: $first-break-point) {
+        .main-footer {
+            flex-flow: wrap;
+            .info {
+                width: 100%;
+               img {
+                    width: 100px;
+               }
+            }
+            .links {
+                width: 100%;
+                h3 {
+                    padding: 0;
+                }
+            }
+            .twitter {
+                width: 100%;
+            }
+            .instagram-gallery {
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: $footer-bg-color;
+    .main-footer {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 50px 0;
+        display: flex;
+        align-items: flex-start;
+
+        .info {
+            width: 25%;
+            padding: 0 20px 0 0;
+            img {
+                width: 24%;
+            }
+        }
+        .links {
+            width: 25%;
+            padding: 0 20px 0 0;
+            a {
+                transition: .5s all;
+                &:hover {
+                    color:$secondary-color;
+                }
+            }
+            h3{
+                @include h3;
+                padding: 0 20px;
+            }
+            ul {
+                list-style-type: circle;
+                li {
+                    line-height: 2;
+                    color: $secondary-color;
+                    a {
+                        color: $primary-color;
+                        text-decoration: none;
+                    }
+                   
+                }
+            }
+           
+        }
+        .twitter{
+            width: 25%;
+            padding: 0 20px 0 0;
+            word-break: break-all;
+            h3{
+                @include h3;
+            }
+            .twit {
+                display: flex;
+                margin: 16px 0;
+                .bird {
+                    padding: 0 10px 0 0;
+                    img{
+                        width: 24px;
+                    }
+                }
+            }
+        }
+        .instagram-gallery {
+            width: 25%;
+            h3{
+                @include h3;
+            }
+            img {
+                margin: 16px 0;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .last-footer {
+        background-color: #000;
+        text-align: center;
+        padding: 30px;
+        a {
+            transition: .5s all;
+            color: $primary-color;
+            text-decoration: none;
+            &:hover {
+                color:$secondary-color;
+            }
+        }
+    }
+    @include scale;
+}

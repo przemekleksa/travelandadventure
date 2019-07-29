@@ -1,0 +1,109 @@
+@import '../../styles/variables';
+
+@mixin form {
+    border: 2px solid white;
+    background-color: $transparent;
+    color: $primary-color;
+    padding: 15px 20px;
+    margin: 5px;
+    width: 20%;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+@mixin scale-tablet {
+    @media screen and (max-width: $first-break-point) {
+        h2 {
+            font-size: 40px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+        }
+     
+    }
+}
+
+@mixin scale-mobile-md {
+    @media screen and (max-width: $second-break-point) {
+        form {
+            flex-direction: column;
+            align-items: center;
+            select {
+                width:50%;
+            }
+            button {
+                width: 50%;
+            }
+        }
+    }
+}
+@mixin scale-mobile-small {
+    @media screen and (max-width: $third-break-point) {
+        h2 {
+            width: 80%;
+        }
+        p {
+            width: 80%;
+        }
+        form {
+            select {
+                width:80%;
+            }
+            button {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.choose {
+    background-image: url('./savanna.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    width: 100%;
+    padding: 50px;
+    h2 {
+        width: 50%;
+        font-size: 100px;
+        margin: 0 auto;
+    }
+    p {
+        width: 50%;
+        // text-align: center;
+        margin: 20px auto;
+        font-family: $font-cursive;
+        font-size: 22px;
+    }
+    form {
+        text-align: center;
+        select {
+            @include form;
+            width: 25%;
+            option {
+                background-color: $form-bg-color;
+                border: 2px solid white;
+            }
+        }
+        button {
+            background-color: $secondary-color;
+            width: 25%;
+            border: 0px;
+            text-transform: uppercase;
+            padding: 17px 40px;
+            margin: 5px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: .4s all;
+            &:hover {
+                background-color: $hover-button-color;
+                color: $primary-color;
+            }
+        }
+    }
+    @include scale-tablet;
+    @include scale-mobile-md;
+    @include scale-mobile-small;
+}

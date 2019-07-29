@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.title {
+    h1 {
+        position: absolute;
+        // left: 50%;
+        // transform: translateX(-50%);
+        text-align: center;
+        top: 25%;
+        width: 100%;
+        // transform: translateY(-50%);
+        font-family: $font-light;
+        font-size: 8rem;
+        @media (max-width: $first-break-point) {
+            top:25%;
+            font-size: 6rem;
+        }
+    }
+    h2 {
+        position: absolute;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // margin: 0 auto;
+        text-align: center;
+        top: 55%;
+        font-family: $font-cursive;
+        width: 100%;
+        @media (max-width: $first-break-point) {
+            font-size: 1.3rem;
+        }
+    }
+}

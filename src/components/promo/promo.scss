@@ -1,0 +1,98 @@
+@import '../../styles/variables';
+
+@mixin scale-tablet {
+    @media screen and (max-width: $first-break-point) {
+        .percent {
+            transform: translateY(10%);
+            img {
+                max-width: 100%;
+            }
+        }
+        .details {
+            margin: 40px;
+        }
+    }
+}
+
+@mixin scale-phone-md {
+    @media screen and (max-width: $second-break-point) {
+        flex-direction: column;
+        .percent {
+            margin: 0 auto;
+            width: 80%;
+            img {
+                max-width: 50%;
+                max-height: 50%;
+            }
+        }
+        .details {
+            margin: 0 auto;
+            width: 80%;
+            button {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }   
+            padding: 0 0 50px 0;
+        }
+    }
+}
+
+.promo {
+    width: 100%;
+    display:flex;
+    background-image: url('./capetown.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 50px;
+    position: relative;
+    .filter {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: rgba(255, 208, 0, 0.589);
+    }
+    .percent {
+        z-index:1;
+        width: 50%;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .details {
+        z-index:1;
+        width: 50%;
+        margin: 0 0 0 80px;
+        h2 {
+            font-size: 40px;
+        }
+        .info {
+            font-family: $font-cursive;
+            font-size: 22px;
+        }
+        .description {
+            line-height: 1.6;
+        }
+        button {
+            text-transform: uppercase;
+            background-color: $primary-color;
+            border: 0px;
+            font-weight: 600;
+            padding: 20px 60px;
+            transition: .4s all;
+            cursor: pointer;
+            &:hover {
+                background-color: $hover-button-color;
+                color: $primary-color;
+            }
+        }
+    }
+    @include scale-tablet;
+    @include scale-phone-md;
+}

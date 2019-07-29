@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter, Switch, Route }from 'react-router-dom';
+
+import Homepage from './pages/homepage/homepage';
+import Destinations from './pages/destinations/destinations';
+import MountBlanc from './pages/destinations/mountBlanc/mountBlanc';
+import Tours from './pages/tours/tours';
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+     <BrowserRouter>
+        <Switch>
+            <Route path="/" component={Homepage} exact />
+            <Route path="/destinations" component={Destinations} exact/>
+            <Route path="/destinations/mountblanc" component={MountBlanc}/>
+            <Route path="/tours" component={Tours} exact/>
+        </Switch>
+     </BrowserRouter>
+      
     </div>
   );
 }

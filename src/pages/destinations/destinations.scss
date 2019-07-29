@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+
+#destinations {
+        background: url('https://roam.mikado-themes.com/wp-content/uploads/2017/08/tour-title-img-1.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-repeat: none;
+        background-attachment: fixed;
+
+    .top {
+        position: relative;
+    }
+    .destination-boxes {
+        position: absolute;
+        top: 100vh;
+        width: 100%;
+        // padding: 50px 0;
+        padding-top: 50px;
+        
+        background-color: $primary-color;
+    }    
+
+}

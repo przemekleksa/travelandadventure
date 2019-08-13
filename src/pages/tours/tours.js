@@ -2,13 +2,24 @@ import React from 'react';
 import Title from '../../components/titleScreen/title';
 import Footer from '../../components/footer/footer';
 import Navbar from '../../components/navbar/navbar';
+import TourDetails from '../../components/tourDetails/tourDetails';
 import './tours.scss';
 
 import calendar from './img/calendar.png';
 import lowtohigh from './img/lowtohigh.png';
 import hightolow from './img/hightolow.png';
 import name from './img/sort-by-alphabet.png';
+
 import cuba from './img/cuba.jpg';
+import mountainlake from './img/mountainlake.jpg';
+import sailing from './img/sailing.jpg';
+import india from './img/india.jpg';
+import china from './img/china.jpg';
+
+import lastminute from './img/lastminute.jpg';
+
+
+
 
 const Tours = () => {
     return ( 
@@ -47,27 +58,28 @@ const Tours = () => {
                 </div>
                 <div className="content">
                     <div className="tours-details">
-                        <div className="tour-details">
-                            <div className="photo">
-                                <img src={cuba} alt="cuba" />
-                            </div>
-                            <div className="tour-text">
-                                <h2>Cuba, Havana</h2>
-                                <p className="rating">8.6	Superb</p>
-                                <p className="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ligula aliquam, malesuada ex ac, auctor nibh. Nunc tincidunt lectus finibus dolor porttitor, nec rutrum dui mattis. Sed a accumsan orci. Sed eleifend sollicitudin nisl, eget tempor odio aliquam quis. Praesent rutrum aliquam tellus at congue. Nam id nisi posuere, auctor dolor in, malesuada massa.…
-                                </p>
-                                <hr />
-                                <p className="price">
-                                <span>$1870</span> / per person
-                                </p>
-                                <div className="other-info">
-                                    15 days 20+ Explore
-                                </div>
-                            </div>
-                            
-                        </div>
+                        <TourDetails dest="Cuba, Havana" img={cuba} 
+                        rating="8.6	Superb" price="1870"
+                        clock="15" traveler="20"
+                        />
+                        <TourDetails dest="Peyto Lake of Banff" img={mountainlake} 
+                        rating="9.0 Superb" price="2730" oldprice="2830"
+                        clock="10" traveler="31"
+                        />
+                        <TourDetails dest="Sailing, Pacific" img={sailing} 
+                        rating="7.0 Good" price="1200 "
+                        clock="15" traveler="36"
+                        />
+                        <TourDetails dest="India Is For Everyone" img={india} 
+                        rating="8.0 Awesome" price="1350"
+                        clock="18" traveler="3"
+                        />
+                        <TourDetails dest="China" img={china} 
+                        rating="7.2 Good" price="2830"
+                        clock="10" traveler="13"
+                        />
                     </div>
+                    
                     <div className="side">
                         <div className="travel-destination">
                             <h2>Travel Destination</h2>
@@ -92,6 +104,7 @@ const Tours = () => {
                             <div className="search-button">
                             Search
                             </div>
+                            <img src={lastminute} alt="last minute"/>
                         </div>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ const PhotoBoxes = () => {
             <div className='photo-boxes'>
                 
                 <div className='box'>
-                <Link to="/destinations/mountblanc">
+                    <Link to="/destinations/mountblanc">
                     
                     <img src={hike} alt="hike" />
                     <div className="box-title">
@@ -27,63 +27,76 @@ const PhotoBoxes = () => {
                 </div>
                 
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={mountain_hike} alt="mountain hike" />
                     <div className="box-title">
                         <h3>Mount blanc</h3>
                         <h4>Just Beautiful</h4>
                     </div>
-
+                    </Link>
                 </div>
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={bali} alt="bali" />
                     <div className="box-title">
                         <h3>Fiji Island Vacation</h3>
                         <h4>Asia</h4>
                     </div>
+                    </Link>
                 </div>
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={tajmahal} alt="tajmahal" />
                     <div className="box-title">
                         <h3>Taj Mahal Agra</h3>
                         <h4>India</h4>
                     </div>
+                    </Link>
                 </div>
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={mountain} alt="mountain" />
                     <div className="box-title">
                         <h3>Mount Blanc</h3>
                         <h4>Different side</h4>
                     </div>
-
+                    </Link>
                 </div>
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={bali} alt="bali" />
                     <div className="box-title">
                         <h3>Spring hiking</h3>
                         <h4>Just Beautiful</h4>
                     </div>
+                    </Link>
                 </div>
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={hike} alt="hike" />
                     <div className="box-title">
                         <h3>Spring hiking</h3>
                         <h4>Just Beautiful</h4>
                     </div>
+                    </Link>
                 </div>
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={thailand} alt="thailand" />
                     <div className="box-title">
                         <h3>Discover Costa Rica</h3>
                         <h4>Just Beautiful</h4>
                     </div>
-
+                    </Link>
                 </div>
                 <div className='box'>
+                    <Link to="/destinations/mountblanc">
                     <img src={beach} alt="beach" />
                     <div className="box-title">
                         <h3>Beach in February</h3>
                         <h4>Thailand</h4>
                     </div>
+                    </Link>
                 </div>
             </div>
 

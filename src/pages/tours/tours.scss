@@ -61,50 +61,68 @@
             margin: 0 auto;
             padding: 75px 0;
             display: flex;
-            .tours-details {
-                width: 75%;
-                .tour-details {
-                    display: flex;
-                    color: $regular-text-color;
-                    .photo {
-                        width: 200%;
-                        img {
-                            max-width: 100%;
-                            object-fit: cover;
-                        }
-                    }
-                    .tour-text {
-                        margin-left: 20px;
-                        h2 {
-                            margin: 0;
-                        }
-                        .rating {
-                            color: $rate;
-                        }
-                        hr {
-                            border-color: $link-hover-color;
-                        }
-                        .price {
-                            span {
-                                color: $secondary-color;
-                                font-weight: 700;
-                                font-size: 24px;
-                            }
-                        }
-                        .other-info {
-                            background-color: $secondary-color;
-                            padding: 20px;
-                        }
-                    }
-                }
-            }
+            // .tours-details {
+            //     width: 75%;
+            //     .tour-details {
+            //         display: flex;
+            //         color: $regular-text-color;
+            //         margin-bottom: 40px;
+            //         .photo {
+            //             width: 200%;
+            //             overflow: hidden; 
+            //             img {
+            //                 max-width: 100%;
+            //                 margin:-29.875% 0;
+            //             }
+            //         }
+            //         .tour-text {
+            //             margin-left: 20px;
+            //             h2 {
+            //                 margin: 0;
+            //             }
+            //             .rating {
+            //                 color: $rate;
+            //             }
+            //             hr {
+            //                 border-color: $link-hover-color;
+            //             }
+            //             .price {
+            //                 span {
+            //                     color: $secondary-color;
+            //                     font-weight: 700;
+            //                     font-size: 24px;
+            //                     &.old-price {
+            //                         font-size: 18px;
+            //                         text-decoration: line-through;
+            //                     }
+            //                 }
+            //             }
+            //             .other-info {
+            //                 background-color: $secondary-color;
+            //                 padding: 20px;
+            //                 display: flex;
+            //                 align-items: center;
+            //                 p {
+            //                     margin: 0;
+            //                 }
+            //                 img {
+            //                     padding-right: 10px;
+            //                     &:nth-child(n+2){
+            //                         padding-left: 10px;
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
             .side {
                 width: 25%;
                 margin-left: 30px;
                 color: $regular-text-color;
-                background-color: $sorting-options-bg;
+                
                 .travel-destination {
-                    
+                    background-color: $sorting-options-bg;
+                    padding-bottom: 1px;
                     h2 {
                     margin: 0;
                     text-align: center;
@@ -146,6 +164,11 @@
                         text-transform: uppercase;
                         font-weight: 700;
                     }    
+                }
+                img {
+                    background-color: $primary-color;
+                    padding-top: 50px;
+                    max-width: 100%;
                 }
                 
             }

@@ -58,7 +58,7 @@ const Tours = () => {
                 </div>
                 <div className="content">
                     <div className="tours-details">
-                        <TourDetails dest="Cuba, Havana" img={cuba} 
+                        <TourDetails tour="tour/havana" dest="Cuba, Havana" img={cuba} 
                         rating="8.6	Superb" price="1870"
                         clock="15" traveler="20"
                         />

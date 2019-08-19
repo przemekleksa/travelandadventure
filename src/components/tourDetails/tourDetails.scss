@@ -17,6 +17,14 @@
             margin-left: 20px;
             h2 {
                 margin: 0;
+                a {
+                    text-decoration: none;
+                    color: $regular-text-color;
+                    transition: .5s all;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
             }
             .rating {
                 color: $rate;

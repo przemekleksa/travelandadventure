@@ -1,6 +1,8 @@
 import React from 'react';
 import './tourDetails.scss';
 
+import { Link } from 'react-router-dom';
+
 import heart from './img/heart.png';
 import traveler from './img/traveler.png';
 import clock from './img/clock.png';
@@ -12,7 +14,8 @@ const TourDetails = (props) => {
                 <img src={props.img} alt="india" />
                 </div>
                 <div className="tour-text">
-                    <h2>{props.dest}</h2>
+                
+                    <h2><Link to={props.tour}>{props.dest}</Link></h2>
                     <p className="rating">{props.rating}</p>
                     <p className="desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ligula aliquam, malesuada ex ac, auctor nibh. Nunc tincidunt lectus finibus dolor porttitor, nec rutrum dui mattis. Sed a accumsan orci. Sed eleifend sollicitudin nisl, eget tempor odio aliquam quis. Praesent rutrum aliquam tellus at congue. Nam id nisi posuere, auctor dolor in, malesuada massa.…

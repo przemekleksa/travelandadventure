@@ -23,48 +23,52 @@
             color: $tours-sorting;
             width: 100%;
             background-color: $sorting-options-bg;
-        }
-        .information {
-            width: $page-width;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            
-            .info-element {
+            .information {
+                width: $page-width;
+                margin: 0 auto;
                 display: flex;
                 align-items: center;
-                padding: 22px;
-                justify-content: center;
-
-                p {
-                    margin: 0 0 0 10px;
-                    font-weight: 500;
-                    
-                }
-                &:first-child {
-                    background-color: $primary-color;
-                    width: 20%;
-                }
-                &:nth-child(2) {
-                    width: 20%;
-                    border-right: 1px solid $link-hover-color;
-                }
-                &:nth-child(3) {
-                    width: 20%;
-                    border-right: 1px solid $link-hover-color;
-                }
-                &:nth-child(4) {
-                    width: 20%;
-                    border-right: 1px solid $link-hover-color;
-                }
-                &:nth-child(5) {
-                    width: 20%;
-                }
+                justify-content: space-between;
+                
+                .info-element {
+                    display: flex;
+                    align-items: center;
+                    padding: 22px;
+                    justify-content: center;
+    
+                    p {
+                        margin: 0 0 0 10px;
+                        font-weight: 500;
+                        
+                    }
+                    &:first-child {
+                        background-color: $primary-color;
+                        width: 20%;
+                    }
+                    &:nth-child(2) {
+                        width: 20%;
+                        border-right: 1px solid $link-hover-color;
+                    }
+                    &:nth-child(3) {
+                        width: 20%;
+                        border-right: 1px solid $link-hover-color;
+                    }
+                    &:nth-child(4) {
+                        width: 20%;
+                        border-right: 1px solid $link-hover-color;
+                    }
+                    &:nth-child(5) {
+                        width: 20%;
+                    }
+                } 
             }
-            
-            
         }
+        .more {
+            width: $page-width;
+            margin: 0 auto;
+            padding: 50px 0 0 0;
+        }
+
     }    
 
 }

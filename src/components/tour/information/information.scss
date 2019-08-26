@@ -1,0 +1,71 @@
+@import '../../../styles/variables';
+
+#info {
+    color: $regular-text-color;
+    width: 70%;
+    h2 {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        color: $secondary-color;
+        font-family: $font-cursive;
+        font-weight: 100;
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+        padding: 0 0 10px 0;
+        div {
+            &:nth-child(n+2) {
+                margin-left: 10px;
+            }
+        }
+    }
+    // hr {
+    //     color: $hr-color;
+    //     margin: 20px 0;
+    // }
+    .tour-info {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        border-top: 1px solid $hr-color;
+        &:last-child {
+            border-bottom: 1px solid $hr-color;
+        }
+        .inf {
+            width: 60%;
+            display: flex;
+        }
+        .str {
+            width: 40%;
+            padding-left: 10px;
+            font-weight: 600;
+            
+        }
+        // #info > div:nth-child(16) > div.check > div > div:nth-child(2)
+        // #info > div:nth-child(18) > div.check > div:nth-child(2) > div:nth-child(1)
+        .check {
+            width: 60%;
+            div {
+                display: flex;
+                div {
+                    width: 50%;
+                }
+                &:nth-child(2) {
+                    div {
+                        &:nth-child(n) {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+            span {
+                color: $secondary-color;
+            }
+        }
+        
+    }
+}

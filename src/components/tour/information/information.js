@@ -68,8 +68,8 @@ const Info = () => {
                 </div>
                 <div className="check">
                     <div>
-                    <div><span>&#10004;</span>Accommondation</div>
-                    <div><span>&#10004;</span>All Museum Tickets</div>
+                    <div><span>&#10004;</span>	&nbsp;Accommondation</div>
+                    <div><span>&#10004;</span>	&nbsp;All Museum Tickets</div>
                     </div>
                 </div>
             </div>
@@ -81,18 +81,18 @@ const Info = () => {
                 <div className="check">
                     <div>
                         <div>
-                            <span>&#10006;</span>Meals
+                            <span>&#10006;</span>	&nbsp;Meals
                         </div>
                         <div>
-                            <span>&#10006;</span>Personal Guide
+                            <span>&#10006;</span>	&nbsp;Personal Guide
                         </div>
                     </div>
                     <div>
                         <div>
-                            <span>&#10006;</span>Transportation/Car
+                            <span>&#10006;</span>	&nbsp;Transportation/Car
                         </div>
                         <div>
-                            <span>&#10006;</span>Typical Souvenir
+                            <span>&#10006;</span>	&nbsp;Typical Souvenir
                         </div>
                     </div>
                 </div>

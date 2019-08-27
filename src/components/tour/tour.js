@@ -13,11 +13,15 @@ import camera from '../../pages/tours/img/photo-camera.png';
 import reviews from '../../pages/tours/img/rating.png';
 import Info from './information/information';
 import Reviews from './reviews/reviews';
+import TourPlan from './tourPlan/tourPlan';
+
+import lastminute from '../../pages/tours/img/lastminute.jpg';
 
 
 class Tour extends Component {
     state = { 
-        subpage: "info",
+        // subpage: "info",
+        subpage: "plan",
     }
 
     toggleComponent = (value) => {
@@ -64,7 +68,26 @@ class Tour extends Component {
                 </div>
                 <div className="more">
                     {this.state.subpage === "info" ?
-                    <Info/> : this.state.subpage === "reviews" && <Reviews/>}
+                    <Info/> : this.state.subpage === "reviews" ? <Reviews/> : this.state.subpage === "plan" &&
+                    <TourPlan /> }
+                    <div className="book">
+                       
+                            <h2>Book this tour</h2>
+                            <input type="text" placeholder="Name"/>
+                            <input type="email" placeholder="Email"/>
+                            <input type="email" placeholder="Confirm Email"/>
+                            <input type="tel" placeholder="Phone"/>
+                            <input type="date" placeholder="dd-mm-yyyy"/>
+                            <input type="number" placeholder="Number of tickets"/>
+                            <textarea rows="5" placeholder="Message"/>
+                            <div className="availability">
+                            Availability
+                            </div>
+                            <div className="book-now">
+                            Book now
+                            </div>
+                            <img src={lastminute} alt="last minute"/>
+                    </div>
                 </div>
                 
                 <Footer/>

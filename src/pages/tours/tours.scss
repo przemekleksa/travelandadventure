@@ -126,12 +126,15 @@
                     h2 {
                     margin: 0;
                     text-align: center;
-                    padding-top: 20px;
+                    padding: 20px 0 10px 0;
                     }
                     input {
                         display:block;
                         padding: 15px;
                         margin: 10px 25px;
+                        &:focus {
+                            outline: none;
+                        }
                     }
                     hr {
                         margin:8%;

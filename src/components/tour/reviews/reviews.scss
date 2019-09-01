@@ -3,4 +3,8 @@
 #reviews {
     width: 75%;
     color: $regular-text-color;
+    hr {
+        margin: 50px 0;
+        border-top: 1px solid $hr-color;
+    }
 }

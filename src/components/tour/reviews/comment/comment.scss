@@ -1,0 +1,16 @@
+@import '../../../../styles/variables';
+
+.comment {
+    display: flex;
+    .comment-details {
+        margin-left: 30px;
+        h2 {
+            font-size: 1.7rem;
+            margin-bottom: 0;
+        }
+        h4 {
+            font-weight: 300;
+            margin: 5px 0;
+        }
+    }
+}

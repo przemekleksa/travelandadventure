@@ -2,15 +2,13 @@ import React from 'react';
 import './score.scss';
 
 const Score = (props) => {
-    // let acco = {
-        
-    // }
-    let divStyle = {
-        width: '80%'
-        // backgroundImage: 'url(' + imgUrl + ')',
-        // WebkitTransition: 'all', // note the capital 'W' here
-        // msTransition: 'all' // 'ms' is the only lowercase vendor prefix
-      };
+
+      const widthAcco = props.acco*10;
+      const widthMeals = props.meals*10;
+      const widthOverall = props.overall*10;
+      const widthTransport = props.transport*10;
+      const widthValue = props.value*10;
+
     return ( 
         <div className="score">
                 <div className="overall-score">
@@ -19,27 +17,27 @@ const Score = (props) => {
                 </div>
                 <div className="score-details">
                     <div className="accommodation">
-                        <div style={divStyle}>
+                        <div style={{ width: widthAcco + '%' }}>
                             Accommodation<span>{props.acco.toFixed(1)}</span>
                         </div>
                     </div>
                     <div className="meals">
-                        <div>
+                        <div style={{ width: widthMeals + '%' }}>
                             Meals<span>{props.meals.toFixed(1)}</span>
                         </div>
                     </div>
                     <div className="overall">
-                        <div width={props.overall}>
+                        <div style={{ width: widthOverall + '%' }}>
                             Overall<span>{props.overall.toFixed(1)}</span>
                         </div>
                     </div>
                     <div className="transport">
-                        <div>
+                        <div style={{ width: widthTransport + '%' }}>
                             Transport<span>{props.transport.toFixed(1)}</span>
                         </div>
                     </div>
                     <div className="value">
-                        <div>
+                        <div style={{ width: widthValue + '%' }}>
                             Value<span>{props.value.toFixed(1)}</span>
                         </div>
                     </div>

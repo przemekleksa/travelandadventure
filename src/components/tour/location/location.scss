@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.location {
+    width:75%;
+    color: $regular-text-color;
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-family: $font-cursive;
+        font-size: 1.4rem;
+        color: $secondary-color;
+    }
+    p {
+        &:nth-child(3) {
+            margin-top: 44px;
+        }
+    }
+}

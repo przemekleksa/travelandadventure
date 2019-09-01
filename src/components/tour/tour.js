@@ -16,12 +16,13 @@ import Reviews from './reviews/reviews';
 import TourPlan from './tourPlan/tourPlan';
 
 import lastminute from '../../pages/tours/img/lastminute.jpg';
+import Location from './location/location';
 
 
 class Tour extends Component {
     state = { 
         // subpage: "info",
-        subpage: "plan",
+        subpage: "reviews",
     }
 
     toggleComponent = (value) => {
@@ -68,8 +69,8 @@ class Tour extends Component {
                 </div>
                 <div className="more">
                     {this.state.subpage === "info" ?
-                    <Info/> : this.state.subpage === "reviews" ? <Reviews/> : this.state.subpage === "plan" &&
-                    <TourPlan /> }
+                    <Info/> : this.state.subpage === "reviews" ? <Reviews/> : this.state.subpage === "plan" ?
+                    <TourPlan /> : this.state.subpage === "location" && <Location />}
                     <div className="book">
                        
                             <h2>Book this tour</h2>

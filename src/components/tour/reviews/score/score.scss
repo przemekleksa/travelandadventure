@@ -1,0 +1,45 @@
+@import '../../../../styles/variables';
+
+.score {
+    color: $regular-text-color;
+    display: flex;
+    .overall-score {
+        background-color: $sorting-options-bg;
+        padding: 50px;
+        div {
+            text-align: center;
+            &:first-child {
+                color: $secondary-color;
+                font-size: 3rem;
+                font-weight: 600;
+            }
+            &:last-child {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .score-details {
+        margin-left: 15px;
+        width: 100%;
+        div {
+            background-color: $sorting-options-bg;
+            margin: 9px 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            div {
+                background-color: $secondary-color;
+                padding: 5px;
+                &:nth-child(1){
+                   // width: 80%;
+                }
+            }
+            span {
+                float: right;
+            }
+        }
+    }
+}

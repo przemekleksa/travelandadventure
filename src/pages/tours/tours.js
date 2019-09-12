@@ -59,22 +59,22 @@ const Tours = () => {
                 <div className="content">
                     <div className="tours-details">
                         <TourDetails tour="tour/havana" dest="Cuba, Havana" img={cuba} 
-                        rating="8.6	Superb" price="1870"
+                        rating="8.6 Superb" price="1870"
                         clock="15" traveler="20"
                         />
-                        <TourDetails dest="Peyto Lake of Banff" img={mountainlake} 
+                        <TourDetails tour="tour/havana" dest="Peyto Lake of Banff" img={mountainlake} 
                         rating="9.0 Superb" price="2730" oldprice="2830"
                         clock="10" traveler="31"
                         />
-                        <TourDetails dest="Sailing, Pacific" img={sailing} 
+                        <TourDetails tour="tour/havana" dest="Sailing, Pacific" img={sailing} 
                         rating="7.0 Good" price="1200 "
                         clock="15" traveler="36"
                         />
-                        <TourDetails dest="India Is For Everyone" img={india} 
+                        <TourDetails tour="tour/havana" dest="India Is For Everyone" img={india} 
                         rating="8.0 Awesome" price="1350"
                         clock="18" traveler="3"
                         />
-                        <TourDetails dest="China" img={china} 
+                        <TourDetails tour="tour/havana" dest="China" img={china} 
                         rating="7.2 Good" price="2830"
                         clock="10" traveler="13"
                         />

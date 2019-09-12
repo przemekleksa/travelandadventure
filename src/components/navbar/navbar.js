@@ -90,7 +90,7 @@ class Navbar extends Component {
                         Tours
                     </li></Link>
                     <hr />
-                    <a href="#"><li>
+                    {/* <a href="#"><li>
                         Pages
                     </li></a>
                     <hr />
@@ -101,7 +101,7 @@ class Navbar extends Component {
                     <a href="#"><li>
                         Elements
                     </li></a>
-                    <hr />
+                    <hr /> */}
                 </ul>
             </nav>
          );
